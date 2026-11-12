@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ronco e Apneia do Sono | Clínica Luiz Gustavo</title>
+<meta name="description" content="Tratamento de ronco, apneia do sono e bruxismo com aparelho intraoral feito sob medida, no laboratório próprio da Clínica Luiz Gustavo, em Teresina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;
+  --bg-2:#EDF3FB;
+  --ink:#16273F;
+  --muted:#566579;
+  --muted-d:#8A97A9;
+  --line:#E3E9F3;
+  --line-strong:#CCD9EC;
+  --blue:#1E5FBF;
+  --blue-d:#123C7A;
+  --blue-ink:#0E2E5C;
+  --card:#164C9E;
+  --card-2:#0F3F86;
+  --card-line:rgba(255,255,255,.16);
+  --card-muted:#C7D8F2;
+  --r:14px;
+  --maxw:1200px;
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--body);font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--blue);display:inline-block}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.02em}
+.h2{font-size:clamp(30px,4.4vw,52px);margin:18px 0 20px;color:var(--ink)}
+.lead{color:var(--muted);font-size:clamp(17px,1.5vw,19px);max-width:62ch}
+.section{padding:96px 0;position:relative}
+.section--alt{background:var(--bg-2)}
+
+.btn{font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.02em;display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;background:var(--blue);color:#fff;border:1px solid var(--blue);transition:transform .18s ease,background .18s ease,box-shadow .18s ease;cursor:pointer}
+.btn:hover{background:var(--blue-d);border-color:var(--blue-d);transform:translateY(-2px);box-shadow:0 12px 30px rgba(30,95,191,.28)}
+.btn svg{width:17px;height:17px}
+.btn--ghost{background:transparent;color:var(--blue);border:1px solid var(--line-strong)}
+.btn--ghost:hover{background:rgba(30,95,191,.08);border-color:var(--blue);color:var(--blue)}
+
+.top{border-bottom:1px solid var(--line);background:rgba(255,255,255,.9);backdrop-filter:blur(8px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:34px;height:34px}
+.brand .bn{font-family:var(--display);font-weight:800;font-size:19px;line-height:1;letter-spacing:-.01em;color:var(--ink)}
+.brand .bs{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.nav{display:flex;gap:30px;align-items:center}
+.nav a{font-size:14.5px;color:var(--muted);font-weight:500;transition:color .15s}
+.nav a:hover{color:var(--ink)}
+.top .btn{padding:11px 20px;font-size:13.5px}
+.burger{display:none;background:none;border:0;color:var(--ink);cursor:pointer}
+
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero__bg{position:absolute;inset:0;z-index:0}
+.hero__bg picture{display:block;width:100%;height:100%}
+.hero__bg img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+.hero__scrim{position:absolute;inset:0;z-index:1;
+  background:
+   linear-gradient(180deg,rgba(11,37,74,.45) 0%,rgba(11,37,74,.20) 28%,rgba(11,37,74,.55) 62%,rgba(11,37,74,.74) 88%,rgba(255,255,255,.97) 100%),
+   linear-gradient(90deg,rgba(11,37,74,.82) 0%,rgba(11,37,74,.34) 52%,rgba(11,37,74,0) 85%);
+}
+.hero__in{position:relative;z-index:2;padding:0 0 74px;width:100%}
+.hero .eyebrow{color:#9DBEF0}
+.hero .eyebrow::before{background:#9DBEF0}
+.hero h1{font-size:clamp(40px,6.4vw,82px);font-weight:900;max-width:16ch;margin:20px 0 22px;color:#fff}
+.hero h1 em{font-style:normal;color:#A9C4EE}
+.hero p{max-width:56ch;color:#E8EEF7;font-size:clamp(17px,1.7vw,20px)}
+.hero__cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:34px}
+.hero__micro{font-size:13.5px;color:#D7E2F3;letter-spacing:.02em}
+
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust__i{padding:30px 26px;border-right:1px solid var(--line);display:flex;gap:14px;align-items:flex-start}
+.trust__i:last-child{border-right:0}
+.trust__i .dot{flex:0 0 auto;width:9px;height:9px;background:var(--blue);transform:rotate(45deg);margin-top:7px}
+.trust__i p{font-size:15px;color:var(--ink);font-weight:500;line-height:1.4}
+
+.symp{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}
+.symp__i{background:#fff;border:1px solid var(--line-strong);border-radius:12px;padding:20px 22px;display:flex;align-items:center;gap:16px;font-weight:500;color:var(--ink);transition:border-color .2s,transform .2s,box-shadow .2s}
+.symp__i:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px rgba(22,39,63,.06)}
+.symp__i span{font-family:var(--display);font-weight:800;color:var(--blue);font-size:15px;min-width:26px}
+
+.band{background:linear-gradient(135deg,var(--blue-d),var(--blue-ink));border-top:1px solid var(--blue-ink);border-bottom:1px solid var(--blue-ink);padding:80px 0;position:relative;overflow:hidden}
+.band::after{content:"";position:absolute;inset:0;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2752%27%20height%3D%2752%27%3E%3Cpath%20d%3D%27M0%200L52%2052M52%200L0%2052%27%20stroke%3D%27%23FFFFFF%27%20stroke-width%3D%271%27%20opacity%3D%270.5%27/%3E%3C/svg%3E");background-size:52px 52px;pointer-events:none}
+.band .wrap{position:relative;z-index:1;text-align:center}
+.band h2{font-size:clamp(28px,4.2vw,50px);max-width:20ch;margin:0 auto 20px;color:#fff}
+.band h2 em{font-style:normal;color:#A9C4EE}
+.band p{color:#D3E0F4;max-width:64ch;margin:0 auto;font-size:18px}
+
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.split--rev .split__media{order:-1}
+.split__media{position:relative}
+.frame{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#fff}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame--portrait{aspect-ratio:4/5;max-width:440px}
+.frame--portrait img{object-position:center 30%}
+.chip{position:absolute;left:18px;bottom:18px;background:var(--card);border:1px solid var(--card-line);border-radius:10px;padding:10px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 10px 26px rgba(16,39,86,.28)}
+.chip img{width:52px;height:52px;border-radius:7px;object-fit:cover}
+.chip b{display:block;font-family:var(--display);font-size:13px;font-weight:800;color:#fff}
+.chip small{color:var(--card-muted);font-size:11.5px}
+.split p{color:var(--muted);margin-top:16px}
+.split p strong{color:var(--ink);font-weight:600}
+
+.bens{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.ben{background:var(--card);border:1px solid var(--card-2);border-radius:12px;padding:20px}
+.ben b{font-family:var(--display);font-weight:800;font-size:16px;display:flex;align-items:center;gap:10px;color:#fff}
+.ben b::before{content:"";width:8px;height:8px;background:#A9C4EE;transform:rotate(45deg)}
+.ben p{color:var(--card-muted);font-size:14.5px;margin-top:8px}
+
+.gal{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:auto auto;gap:16px;margin-top:44px}
+.gal figure{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.gal figure:first-child{grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;min-height:220px}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 20px 16px;background:linear-gradient(180deg,transparent,rgba(11,37,74,.9))}
+.gal figcaption b{font-family:var(--display);font-weight:800;font-size:16px;color:#fff}
+.gal figcaption small{display:block;color:#CFE0F7;font-size:12.5px;margin-top:2px;letter-spacing:.02em}
+.labnote{margin-top:22px;display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--card-2);border-radius:12px;padding:16px 20px}
+.labnote .dot{width:9px;height:9px;background:#A9C4EE;transform:rotate(45deg);flex:0 0 auto}
+.labnote p{font-size:15px;color:#fff}
+.labnote strong{color:#CFE0F7;font-weight:600}
+
+.brux{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:44px}
+.brux h3{font-family:var(--display);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:18px}
+.pill{background:#fff;border:1px solid var(--line-strong);border-radius:999px;padding:12px 18px;font-size:14.5px;font-weight:500;color:var(--ink);margin-bottom:10px}
+.brux__close{margin-top:38px;border-top:1px solid var(--line);padding-top:26px;color:var(--muted)}
+.brux__close strong{color:var(--ink);font-weight:600}
+
+.auth{display:grid;grid-template-columns:.82fr 1.18fr;gap:56px;align-items:start}
+.drphoto{border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.drphoto .doc__ph{aspect-ratio:4/5;border-radius:0;background:var(--bg-2);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.drphoto .doc__ph img.dr{width:100%;height:100%;object-fit:cover;object-position:center 16%;position:absolute;inset:0;opacity:1;z-index:2}
+.drplate{margin-top:16px}
+.drplate b{font-family:var(--display);font-weight:800;font-size:20px;display:block;color:var(--ink)}
+.drplate .cro{color:var(--blue);font-size:12.5px;letter-spacing:.06em;font-weight:600;display:block;margin:5px 0 10px}
+.drplate p{color:var(--muted);font-size:14px}
+.diffs{display:flex;flex-direction:column;gap:16px;margin-top:8px}
+.diffs--auth{margin-top:26px}
+.diff{background:var(--card);border:1px solid var(--card-2);border-radius:12px;padding:22px 24px}
+.diff b{font-family:var(--display);font-weight:800;font-size:18px;display:flex;align-items:center;gap:12px;color:#fff}
+.diff b i{font-style:normal;color:#fff;font-size:14px;border:1px solid var(--card-line);width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+.diff p{color:var(--card-muted);margin-top:8px;font-size:15px}
+.auth__lead strong{color:var(--ink);font-weight:600}
+.auth__badge{margin-top:26px;display:inline-flex;gap:12px;align-items:center;background:var(--blue-ink);border:1px solid var(--card-2);border-radius:12px;padding:14px 18px}
+.auth__badge svg{width:26px;height:26px;color:#A9C4EE;flex:0 0 auto}
+.auth__badge span{font-size:14px;color:#fff;line-height:1.35}
+
+.teamsolo{margin-top:44px}
+.docfeat{display:grid;grid-template-columns:320px 1fr;background:var(--card);border:1px solid var(--card-2);border-radius:var(--r);overflow:hidden;max-width:900px;box-shadow:0 18px 44px rgba(16,39,86,.16)}
+.docfeat__media{position:relative;min-height:360px}
+.docfeat__media img{width:100%;height:100%;object-fit:cover;object-position:center 22%;position:absolute;inset:0}
+.docfeat__body{padding:34px 36px;display:flex;flex-direction:column;justify-content:center}
+.docfeat__tag{font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#A9C4EE;margin-bottom:12px}
+.docfeat__body b{font-family:var(--display);font-weight:800;font-size:27px;display:block;line-height:1.05;color:#fff}
+.docfeat__body .cro{color:#A9C4EE;font-size:13px;letter-spacing:.06em;font-weight:600;margin:6px 0 14px}
+.docfeat__body p{color:var(--card-muted);font-size:15px}
+.docfeat__soon{margin-top:20px;font-size:13px;color:#B9CBE6;display:inline-flex;align-items:center;gap:9px}
+.docfeat__soon::before{content:"";width:7px;height:7px;background:#A9C4EE;transform:rotate(45deg);flex:0 0 auto}
+
+.quote{max-width:820px;margin:0 auto;text-align:center}
+.stars{color:var(--blue);letter-spacing:6px;font-size:20px}
+.quote blockquote{font-family:var(--display);font-weight:600;font-size:clamp(21px,2.6vw,30px);line-height:1.35;margin:22px 0 24px;letter-spacing:-.01em;color:var(--ink)}
+.quote cite{font-style:normal;color:var(--muted)}
+.quote cite b{color:var(--ink);font-family:var(--display);font-weight:800;display:block;font-size:17px}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.cinfo{display:grid;gap:2px}
+.cinfo .row{padding:18px 0;border-bottom:1px solid var(--line)}
+.cinfo .row:first-child{border-top:1px solid var(--line)}
+.cinfo .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:4px}
+.cinfo .v{font-size:16.5px;color:var(--ink)}
+.cmedia{display:flex;flex-direction:column;gap:16px}
+.cmedia .frame img{width:100%;height:260px;object-fit:cover}
+.mapwrap{display:flex;flex-direction:column;gap:12px}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);height:280px;background:var(--bg-2)}
+.map iframe{width:100%;height:100%;border:0}
+.map__btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--card);border:1px solid var(--card-2);border-radius:10px;padding:15px 18px;font-family:var(--display);font-weight:800;font-size:14.5px;color:#fff;transition:background .18s,color .18s,border-color .18s}
+.map__btn:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.map__btn svg{width:16px;height:16px}
+.contact .btn{margin-top:26px}
+
+.foot{background:var(--blue-ink);border-top:1px solid var(--blue-ink);padding:64px 0 30px}
+.foot__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot .brand{margin-bottom:16px}
+.foot .brand .bn{color:#fff}
+.foot .brand .bs{color:#B9CBE6}
+.foot__desc{color:#C7D3E6;font-size:14.5px;max-width:38ch}
+.foot h3{font-family:var(--display);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#8FA6C8;margin-bottom:16px}
+.foot ul{list-style:none;display:grid;gap:10px}
+.foot ul a,.foot ul li{color:#E7EDF6;font-size:14.5px}
+.foot ul a:hover{color:#A9C4EE}
+.foot__bar{margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#93A3BE;font-size:12.5px}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:960px){
+  .split,.auth,.contact,.brux{grid-template-columns:1fr;gap:34px}
+  .auth__media{max-width:400px;margin:0 auto}
+  .split--rev .split__media{order:0}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .trust__i:nth-child(2){border-right:0}
+  .trust__i{border-bottom:1px solid var(--line)}
+  .gal{grid-template-columns:1fr}
+  .gal figure:first-child{grid-row:auto}
+}
+@media(max-width:720px){
+  .nav{display:none}
+  .burger{display:block}
+  .nav.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:18px 24px;gap:18px;z-index:40}
+  .top{position:relative}
+  .section{padding:70px 0}
+  .symp,.bens{grid-template-columns:1fr}
+  .hero__in{padding-bottom:54px}
+  .hero__bg img{object-position:center 30%}
+  .docfeat{grid-template-columns:1fr;max-width:460px;margin:0 auto}
+  .docfeat__media{min-height:320px}
+  .docfeat__media img{object-position:center 16%}
+  .docfeat__body{padding:26px 24px}
+  .foot__grid{grid-template-columns:1fr;gap:32px}
+}
+.vsplit{display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:center}
+.vsplit__video{display:flex;justify-content:center}
+.vframe{width:100%;max-width:320px;aspect-ratio:9/16;border-radius:18px;overflow:hidden;border:1px solid var(--line-strong);background:#000;box-shadow:0 18px 44px rgba(16,39,86,.16)}
+.vframe video{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:960px){.vsplit{grid-template-columns:1fr;gap:34px}}
+.diag{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.dcard{background:var(--card);border:1px solid var(--card-2);border-radius:14px;padding:26px 24px;box-shadow:0 14px 34px rgba(16,39,86,.10)}
+.dcard .dnum{font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#A9C4EE;display:flex;align-items:center;gap:9px;margin-bottom:14px}
+.dcard .dnum::before{content:"";width:8px;height:8px;background:#A9C4EE;transform:rotate(45deg)}
+.dcard b{font-family:var(--display);font-weight:800;font-size:19px;color:#fff;display:block;line-height:1.1}
+.dcard p{color:var(--card-muted);font-size:14.5px;margin-top:9px}
+.diag__note{margin-top:22px;display:flex;gap:14px;align-items:center;background:var(--bg-2);border:1px solid var(--line-strong);border-radius:12px;padding:16px 20px}
+.diag__note .dot{width:9px;height:9px;background:var(--blue);transform:rotate(45deg);flex:0 0 auto}
+.diag__note p{font-size:15px;color:var(--ink)}
+.diag__note strong{color:var(--blue);font-weight:600}
+@media(max-width:860px){.diag{grid-template-columns:1fr}}
+</style>
+  <link rel="preload" as="image" href="images/hero-casal.webp" media="(min-width:761px)">
+  <link rel="preload" as="image" href="images/hero-casal-v.webp" media="(max-width:760px)">
+</head>
+<body>
+
+<!-- HEADER (não fixo) -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="landing-luiz-gustavo.html" aria-label="Clínica Luiz Gustavo, página inicial">
+      <img src="images/logo-azul.png" alt="" width="160" height="160" loading="lazy" decoding="async">
+      <span>
+        <span class="bn">Luiz Gustavo</span><br>
+        <span class="bs">Odontologia</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#problema">Sintomas</a>
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#solucao">O aparelho</a>
+      <a href="#estrutura">Estrutura</a>
+      <a href="#bruxismo">Bruxismo</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn" href="https://wa.me/5586981085995?text=Ola%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avaliacao%20para%20ronco%20e%20apneia%20do%20sono." target="_blank" rel="noopener">Agendar avaliação</a>
+    <button class="burger" id="burger" aria-label="Abrir menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg">
+    <picture>
+      <source media="(max-width:760px)" srcset="images/hero-casal-v.webp">
+      <img src="images/hero-casal.webp" alt="Homem roncando enquanto a parceira tapa os ouvidos, incomodada com o ronco" width="1920" height="1288" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="hero__in">
+    <div class="wrap">
+      <span class="eyebrow">Núcleo de Ronco e Apneia · Clínica Luiz Gustavo</span>
+      <h1>Pare de <em>roncar</em> e volte a dormir bem.</h1>
+      <p>Trate o ronco e a apneia do sono com um aparelho simples, sem cirurgia e sem máquina barulhenta, e acorde com energia de novo.</p>
+      <div class="hero__cta">
+        <a class="btn" href="https://wa.me/5586981085995?text=Ola%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avaliacao%20para%20ronco%20e%20apneia%20do%20sono." target="_blank" rel="noopener">
+          Quero parar de roncar
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <span class="hero__micro">Atendimento em Teresina · Av. Vilmary, 2636</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust__i"><span class="dot"></span><p>20 anos de experiência em ronco e apneia do sono no Piauí</p></div>
+    <div class="trust__i"><span class="dot"></span><p>Laboratório de prótese próprio</p></div>
+    <div class="trust__i"><span class="dot"></span><p>Membro da Academia Americana Dental de Medicina do Sono</p></div>
+    <div class="trust__i"><span class="dot"></span><p>Estrutura completa em São Cristóvão, Teresina</p></div>
+  </div>
+</div>
+
+<!-- SINTOMAS -->
+<section class="section" id="problema">
+  <div class="wrap reveal">
+    <span class="eyebrow">Você se reconhece?</span>
+    <h2 class="h2">O ronco e a apneia vão muito além do barulho.</h2>
+    <p class="lead">O ronco e a apneia afetam o corpo inteiro. Se você convive com alguns destes sinais, é hora de investigar.</p>
+    <div class="symp">
+      <div class="symp__i"><span>01</span>Ronco alto e frequente</div>
+      <div class="symp__i"><span>02</span>Acorda cansado mesmo dormindo a noite toda</div>
+      <div class="symp__i"><span>03</span>Cansaço e sonolência durante o dia</div>
+      <div class="symp__i"><span>04</span>Dificuldade de concentração</div>
+      <div class="symp__i"><span>05</span>Falhas de memória</div>
+      <div class="symp__i"><span>06</span>Ganho de peso constante</div>
+      <div class="symp__i"><span>07</span>Queda na libido</div>
+      <div class="symp__i"><span>08</span>Incomoda o sono de quem dorme ao seu lado</div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<section class="band">
+  <div class="wrap reveal">
+    <h2>Apneia do sono não é frescura. <em>É saúde.</em></h2>
+    <p>Durante a apneia, a respiração é interrompida várias vezes por noite. Com o tempo, isso sobrecarrega o corpo e afeta funções que só o sono de qualidade consegue restaurar. Tratar cedo é cuidar do seu coração, da sua cabeça e da sua energia.</p>
+  </div>
+</section>
+
+<!-- VÍDEO SAÚDE -->
+<section class="section" id="video-saude">
+  <div class="wrap">
+    <div class="vsplit reveal">
+      <div class="vsplit__text">
+        <span class="eyebrow">Com quem é referência</span>
+        <h2 class="h2">Você ronca ou tem apneia? Veja o que fazer.</h2>
+        <p class="lead">O Dr. Luiz Gustavo explica, de forma simples, como o aparelho intraoral de avanço mandibular trata o ronco e a apneia do sono e devolve as suas noites.</p>
+        <div style="margin-top:28px"><a class="btn" href="https://wa.me/5586981085995?text=Ola%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avaliacao%20para%20ronco%20e%20apneia%20do%20sono." target="_blank" rel="noopener">Quero avaliar meu caso</a></div>
+      </div>
+      <div class="vsplit__video">
+        <div class="vframe">
+          <video controls preload="none" playsinline poster="images/video-dr-poster.webp">
+            <source src="videos/dr-explica.mp4" type="video/mp4">
+            Seu navegador não suporta a exibição deste vídeo.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGNÓSTICO / BIOLOGIX -->
+<section class="section section--alt" id="diagnostico">
+  <div class="wrap reveal">
+    <span class="eyebrow">Diagnóstico do sono</span>
+    <h2 class="h2">Antes de tratar, a gente descobre o que acontece enquanto você dorme.</h2>
+    <p class="lead">Na Clínica Luiz Gustavo, o cuidado começa pelo diagnóstico. Você faz o exame do sono com a tecnologia Biologix, no conforto da sua casa, e conta com uma estrutura completa para cuidar do seu caso do começo ao fim.</p>
+    <div class="diag">
+      <div class="dcard">
+        <div class="dnum">Exame do sono</div>
+        <b>Tecnologia Biologix</b>
+        <p>Um exame que monitora o seu sono e identifica as pausas na respiração, feito na sua própria casa, sem internação.</p>
+      </div>
+      <div class="dcard">
+        <div class="dnum">Estrutura integrada</div>
+        <b>Radiologia e laboratório próprios</b>
+        <p>Diagnóstico, exames e a produção do aparelho reunidos na mesma clínica, com mais controle e agilidade.</p>
+      </div>
+      <div class="dcard">
+        <div class="dnum">Do início ao fim</div>
+        <b>Acompanhamento especializado</b>
+        <p>Da análise do exame ao ajuste do aparelho, você é acompanhado de perto por uma equipe dedicada ao sono.</p>
+      </div>
+    </div>
+    <div class="diag__note">
+      <span class="dot"></span>
+      <p><strong>Diagnóstico preciso.</strong> Entender a causa e a gravidade do seu caso é o que garante o tratamento certo para o seu ronco e a sua apneia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="section" id="solucao">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split__media">
+        <div class="frame frame--portrait"><img src="images/dr-aparelho.webp" alt="Dr. Luiz Gustavo segurando o aparelho intraoral para ronco e apneia" width="900" height="1125" loading="lazy" decoding="async"></div>
+      </div>
+      <div>
+        <span class="eyebrow">A solução para o ronco e a apneia</span>
+        <h2 class="h2">Um aparelho simples que trata o ronco e a apneia.</h2>
+        <p>Para tratar o ronco e a apneia, usamos um aparelho intraoral, um dispositivo móvel de acrílico <strong>feito sob medida para a sua boca</strong>, no nosso laboratório de prótese próprio. Parece um protetor bucal transparente: discreto, leve e confortável.</p>
+        <p>Usado durante o sono, ele avança levemente a mandíbula e mantém as vias aéreas abertas, facilitando a passagem do ar. O resultado é um sono mais tranquilo, sem o ronco e sem as pausas na respiração.</p>
+        <p>Diferente do CPAP, <strong>não tem máquina, não tem barulho e não resseca a garganta</strong>. É só colocar e dormir.</p>
+        <div class="bens">
+          <div class="ben"><b>Fim do ronco</b><p>Desobstrui a passagem de ar e silencia o ronco que incomoda você e quem dorme ao seu lado.</p></div>
+          <div class="ben"><b>Apneia sob controle</b><p>Reduz as pausas na respiração durante o sono e devolve o descanso profundo que restaura o corpo.</p></div>
+          <div class="ben"><b>Mais energia</b><p>Acaba com o cansaço e a sonolência, melhora a atenção e a memória no dia a dia.</p></div>
+          <div class="ben"><b>Praticidade total</b><p>Sem fios e sem máscara. Fácil de limpar e de levar em qualquer viagem.</p></div>
+        </div>
+        <div style="margin-top:30px"><a class="btn" href="https://wa.me/5586981085995?text=Ola%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avaliacao%20para%20ronco%20e%20apneia%20do%20sono." target="_blank" rel="noopener">Agendar avaliação</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALAÇÕES -->
+<section class="section section--alt" id="estrutura">
+  <div class="wrap reveal">
+    <span class="eyebrow">Nossa estrutura</span>
+    <h2 class="h2">Estrutura completa para tratar o seu sono.</h2>
+    <p class="lead">Do primeiro contato ao acompanhamento, você é atendido em um ambiente completo, com tecnologia moderna e o laboratório de prótese dentro da própria clínica.</p>
+    <div class="gal">
+      <figure><img src="images/recep.webp" alt="Recepção da Clínica Luiz Gustavo" width="1200" height="702" loading="lazy" decoding="async">
+        <figcaption><b>Recepção acolhedora</b><small>Conforto desde a chegada</small></figcaption></figure>
+      <figure><img src="images/sala1.webp" alt="Consultório equipado da Clínica Luiz Gustavo" width="1000" height="680" loading="lazy" decoding="async">
+        <figcaption><b>Consultórios equipados</b><small>Tecnologia para diagnóstico preciso</small></figcaption></figure>
+      <figure><img src="images/sala2.webp" alt="Estrutura clínica da Clínica Luiz Gustavo" width="1200" height="595" loading="lazy" decoding="async">
+        <figcaption><b>Estrutura completa</b><small>Ambiente moderno e climatizado</small></figcaption></figure>
+    </div>
+    <div class="labnote">
+      <span class="dot"></span>
+      <p><strong>Laboratório de prótese próprio.</strong> Seu aparelho intraoral é planejado e produzido dentro da clínica, com mais controle de qualidade e ajuste sob medida.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BRUXISMO -->
+<section class="section" id="bruxismo">
+  <div class="wrap reveal">
+    <span class="eyebrow">Bruxismo</span>
+    <h2 class="h2">Range ou aperta os dentes durante a noite?</h2>
+    <p class="lead">O bruxismo é o ranger ou apertar involuntário dos dentes. Além de desgastar o sorriso, ele causa dores e tensões que você leva para o dia seguinte.</p>
+    <div class="brux">
+      <div>
+        <h3>Sinais e sintomas</h3>
+        <div class="pill">Dores na mandíbula ao acordar</div>
+        <div class="pill">Desgaste dos dentes</div>
+        <div class="pill">Dores de cabeça frequentes</div>
+        <div class="pill">Tensão no rosto e no pescoço</div>
+        <div class="pill">Desconforto na articulação mandibular</div>
+      </div>
+      <div>
+        <h3>Possíveis causas</h3>
+        <div class="pill">Estresse e ansiedade</div>
+        <div class="pill">Má oclusão dentária</div>
+        <div class="pill">Uso excessivo de cafeína e álcool</div>
+        <div class="pill">Hábitos e comportamentos involuntários</div>
+      </div>
+    </div>
+    <div class="brux__close">
+      <p>Na <strong>Clínica Luiz Gustavo</strong>, o tratamento é definido com diagnóstico específico, exames radiológicos avançados e tecnologia de ponta, para tratar a causa e proteger a sua saúde bucal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AUTORIDADE -->
+<section class="section section--alt" id="autoridade">
+  <div class="wrap">
+    <div class="auth reveal">
+      <div class="auth__media">
+        <div class="drphoto">
+          <div class="doc__ph"><img class="dr" src="images/dr.webp" alt="Dr. Luiz Gustavo" width="900" height="1350" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="drplate">
+          <b>Dr. Luiz Gustavo</b>
+          <span class="cro">CRO-PI 1726 · Fundador</span>
+          <p>Membro da Academia Americana Dental de Medicina do Sono e da Sociedade Brasileira de Reabilitação Oral.</p>
+        </div>
+      </div>
+      <div class="auth__content">
+        <span class="eyebrow">Por que tratar na Clínica Luiz Gustavo</span>
+        <h2 class="h2">Referência em ronco e apneia do sono no Piauí.</h2>
+        <p class="lead">A Clínica Luiz Gustavo reúne estrutura completa, laboratório de prótese próprio e um protocolo de tratamento de ronco e apneia conduzido por uma equipe especializada. À frente dela está o <strong>Dr. Luiz Gustavo</strong>, com mais de 20 anos de experiência no cuidado com distúrbios do sono.</p>
+        <div class="auth__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.9 7.2 17.7l.9-5.4L4.2 8.5l5.4-.8z"/></svg>
+          <span>Protocolo de sono conduzido por uma equipe, com a chancela do fundador.</span>
+        </div>
+        <div class="diffs diffs--auth">
+          <div class="diff"><b><i>01</i>Diagnóstico preciso</b><p>Avaliação com exames para entender a causa do seu caso antes de qualquer tratamento.</p></div>
+          <div class="diff"><b><i>02</i>Aparelho sob medida</b><p>Feito exclusivamente para a sua boca, no nosso laboratório de prótese próprio.</p></div>
+          <div class="diff"><b><i>03</i>Acompanhamento próximo</b><p>Você é acompanhado de perto, com ajustes periódicos, até dormir bem de verdade.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPE -->
+<section class="section" id="equipe">
+  <div class="wrap reveal">
+    <span class="eyebrow">Quem cuida de você</span>
+    <h2 class="h2">Uma equipe dedicada ao tratamento de ronco e apneia.</h2>
+    <p class="lead">O tratamento segue o protocolo de medicina do sono desenvolvido pelo Dr. Luiz Gustavo. Cada profissional do núcleo é preparado para conduzir o seu caso com o mesmo cuidado e a mesma técnica.</p>
+    <div class="teamsolo">
+      <article class="docfeat">
+        <div class="docfeat__media"><img src="images/dr.webp" alt="Dr. Luiz Gustavo" width="900" height="1350" loading="lazy" decoding="async"></div>
+        <div class="docfeat__body">
+          <span class="docfeat__tag">Fundador do núcleo</span>
+          <b>Dr. Luiz Gustavo</b>
+          <div class="cro">CRO-PI 1726</div>
+          <p>Responsável técnico e criador do protocolo de medicina do sono da clínica. Membro da Academia Americana Dental de Medicina do Sono, com mais de 20 anos de experiência no cuidado com distúrbios do sono.</p>
+          <span class="docfeat__soon">Núcleo em expansão, com novos profissionais em breve.</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTO -->
+<section class="section section--alt">
+  <div class="wrap reveal">
+    <div class="quote">
+      <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+      <blockquote>“Me sinto muito mais confortável usando esse aparelho do que com o CPAP. Ele ressecava menos a minha garganta e trouxe de volta a salivação natural. Para mim foi um ganho extra, além do próprio tratamento.”</blockquote>
+      <cite><b>Suzane Jales</b>Tratamento de ronco e apneia</cite>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="section" id="contato">
+  <div class="wrap reveal">
+    <span class="eyebrow">Localização e contato</span>
+    <h2 class="h2">Estamos perto de você.</h2>
+    <div class="contact" style="margin-top:34px">
+      <div>
+        <div class="cinfo">
+          <div class="row"><div class="k">Endereço</div><div class="v">Av. Vilmary, 2636, São Cristóvão, Teresina, PI, 64051-120</div></div>
+          <div class="row"><div class="k">WhatsApp</div><div class="v">(86) 98108-5995</div></div>
+          <div class="row"><div class="k">Telefone fixo</div><div class="v">(86) 3217-3215</div></div>
+          <div class="row"><div class="k">E-mail</div><div class="v"><a href="mailto:luizgustavocd@hotmail.com">luizgustavocd@hotmail.com</a></div></div>
+          <div class="row"><div class="k">Atendimento</div><div class="v">Segunda a sexta, 09:00 às 19:00 · Sábado, 08:00 às 12:00</div></div>
+          <div class="row"><div class="k">Instagram</div><div class="v"><a href="https://www.instagram.com/clinicaluizgustavo/" target="_blank" rel="noopener">@clinicaluizgustavo</a></div></div>
+        </div>
+        <a class="btn" href="https://wa.me/5586981085995?text=Ola%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avaliacao%20para%20ronco%20e%20apneia%20do%20sono." target="_blank" rel="noopener">Agendar minha avaliação</a>
+      </div>
+      <div class="cmedia">
+        <div class="frame"><img src="images/fachada-v.webp" alt="Entrada da Clínica Luiz Gustavo" width="1080" height="1620" loading="lazy" decoding="async"></div>
+        <div class="mapwrap">
+          <div class="map">
+            <iframe title="Mapa da Clínica Luiz Gustavo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=Av.%20Vilmary%2C%202636%20-%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%2C%20Teresina%20-%20PI&z=16&output=embed"></iframe>
+          </div>
+          <a class="map__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.%20Vilmary%2C%202636%20-%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%2C%20Teresina%20-%20PI" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-6-5.2-6-10a6 6 0 0112 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+            Ir até o local no Google Maps
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="brand" href="landing-luiz-gustavo.html"><img src="images/logo-claro.png" alt="" width="160" height="160" loading="lazy" decoding="async"><span><span class="bn">Luiz Gustavo</span><br><span class="bs">Odontologia</span></span></a>
+        <p class="foot__desc">Tratamento de ronco, apneia do sono e bruxismo com aparelho intraoral, planejamento e cuidado, em Teresina.</p>
+      </div>
+      <div>
+        <h3>Nesta página</h3>
+        <ul>
+          <li><a href="#problema">Sintomas</a></li>
+          <li><a href="#diagnostico">Diagnóstico do sono</a></li>
+          <li><a href="#solucao">O aparelho</a></li>
+          <li><a href="#estrutura">Estrutura</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="landing-luiz-gustavo.html">Voltar ao site</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li>Av. Vilmary, 2636, São Cristóvão</li>
+          <li>Teresina, PI, 64051-120</li>
+          <li>WhatsApp (86) 98108-5995</li>
+          <li>Fixo (86) 3217-3215</li>
+          <li><a href="https://wa.me/5586981085995?text=Ola%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avaliacao%20para%20ronco%20e%20apneia%20do%20sono." target="_blank" rel="noopener">Falar no WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <span>© 2026 Luiz Gustavo Odontologia. Todos os direitos reservados.</span>
+      <span>Responsável técnico Dr. Luiz Gustavo Fernandes Lima Oliveira, CRO-PI 1726. CNPJ 10.845.646/0001-23.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('nav');
+  if(b){b.addEventListener('click',function(){n.classList.toggle('open')});
+    n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open')})});}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
